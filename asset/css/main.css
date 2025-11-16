@@ -1,0 +1,71 @@
+
+/* common */
+
+
+#main{}
+.sc{min-height: 100vh; display:flex;align-items: center; justify-content: center; width: 100%;}
+.sc-con{width: 100%;}
+
+/* loader */
+.loader {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.loader:nth-child(1) {
+  background: #dddddd; /* #e4e4e4 darken by 6% */
+}
+
+.loader:nth-child(2) {
+  background: #d6d6d6; /* darken by 12% */
+}
+
+.loader:nth-child(3) {
+  background: #cfcfcf; /* darken by 18% */
+}
+
+.loader:nth-child(4) {
+  background: #c8c8c8; /* darken by 24% */
+}
+/* intro */
+.sc.intro{ position: relative; transition: all 0.3s;}
+.sc.intro.hide{opacity:0;visibility: hidden;}
+.sc.intro .intro-con{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 2rem;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(2rem);
+    transition: all 0.2s;
+}
+.sc.intro .intro-txt{font-size: 6rem; font-weight: bold; display: block; text-align: center; }
+.intro-txt .point{
+ 
+}
+
+.sc.intro .intro-con.active{
+    opacity:1;visibility: visible; transform: translateY(0);
+}
+
+.intro-txt .point.active{text-shadow: 0 0 20px rgb(103, 228, 69);
+    animation: pointText 1s ease-in-out 1;
+}
+/* 진동 애니메이션 */
+@keyframes pointText {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+}

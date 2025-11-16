@@ -1,0 +1,97 @@
+/* pc-header */
+.header{ 
+}
+.header-inner{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: transparent;
+    transition: all 0.3s;
+    display: flex; align-items: center; justify-content: space-between;width: 100%;
+    padding:var(--layout-padding);
+    height: var(--header-height);
+}
+
+.logo{
+    width: 160px;
+    height: 45px;
+}
+.logo .link{
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-image: url("../../img/common/Tang’s_white.svg");
+    width: 100%;
+    height: 100%;
+}
+
+
+.gnb{display: inline-flex; align-items: center; }
+.gnb-nav{}
+.nav-ul{display: flex; justify-content: center; 
+    font-size: var(--header-font-size); gap:var( --gnb-gap)}
+.nav-ul li{}
+.nav-link{position: relative; color:#fff;font-family:'GMarketSans';}
+.nav-link:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s 
+cubic-bezier(0.42, 0, 0, 1);}
+
+.nav-link:hover:before,.nav-link:focus:before{ transform: scaleX(1); transform-origin: left;}   
+
+
+/* mobile-header */
+.m_open-btn{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+    transition: border 0.3s;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+.m_open-btn [class^="line-"]{
+    width: 1.6rem;
+    height: 0.2rem;
+    background-color: #fff;
+    transition: ease all 0.3s;
+    margin: 0.3rem 0;}
+
+.m_header{
+    position: absolute;
+    transition: opacity 0.5s cubic-bezier(0.42, 0, 0, 1);
+    opacity: 0;
+    right: 5.4rem;
+    top: 2rem;
+    pointer-events: none; /*클릭,마우스오버,드래그 등 이벤트 방지 속성*/
+}
+/* 모바일에서 클릭했을경우 class active 추가 */
+.m_header.active{
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    pointer-events: auto;
+}
+
+.m_open-btn.active .line-top{transform: translateY(0.35rem) rotate(45deg);}
+.m_open-btn.active .line-bottom{transform: translateY(-0.42rem) rotate(-45deg);}
+
+@media (max-width: 640px) {
+    .m_open-btn{display: flex;}
+    .gnb-nav{display: none;}
+}

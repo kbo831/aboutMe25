@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    asdfasdfsad
-</body>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="autocomplete" content="off" />
+    <meta name="author" content="김태은" />
+    <meta name="title" content="김태은 포트폴리오 웹페이지" />
+    <meta
+      name="keywords"
+      content="김태은 포트폴리오,웹표준,김태은, 포트폴리오, 프론트엔드, React, HTML, CSS, 백엔드,스프링부트,자바,파이썬"
+    />
+    <meta name="description" content="김태은의 포트폴리오 웹페이지입니다." />
+    <meta name="image" content="/asset/img/common/favicon.png" />
+    <meta name="application-name" content="김태은 포트폴리오" />
+    <meta name="robots" content="index, follow" />
+    <!-- <meta http-equiv="refresh" content="180" /> -->
+    <!-- 오픈그래프 -->
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="김태은 포트폴리오" />
+    <meta property="og:site_name" content="김태은 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/asset/img/common/favicon.ico" />
+    <meta property="og:url" content="http://kbo831.github.io/aboutMe25" />
+    <meta
+      property="og:description"
+      content="김태은의 포트폴리오 웹페이지입니다."
+    />
+
+    <title>김태은 포트폴리오</title>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="/asset/img/common/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/asset/css/common/reset.css" />
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="/asset/css/swiper/swiper-bundle.css" />
+    <!-- AOS-->
+    <link href="/asset/css/aos/aos.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="stylesheet" href="/asset/font/gmarketSans/GmarketSans.css" />
+    <link rel="stylesheet" href="/asset/font/pretendard/pretendard.css" />
+    <link rel="stylesheet" href="/asset/css/common/layout.css" />
+    <link rel="stylesheet" href="/asset/css/common/header.css" />
+    <link rel="stylesheet" href="/asset/css/common/footer.css" />
+    <link rel="stylesheet" href="/asset/css/main.css" />
+    <!-- 구글애널리틱스 코드, 네이버 에널리틱스? -->
+
+    <!-- 자바스크립트  -->
+
+    <!-- 익스플로러 주석 -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 9]
+    <script src="js/respond.js"></script>
+    <![endif]-->
+    <!-- JQUERY -->
+    <script src="/asset/js/jquery/jquery.min.js"></script>
+    <!-- SWIPER -->
+    <script src="/asset/js/swiper/swiper-bundle.js"></script>
+    <!-- AOS -->
+    <script src="/asset/js/aos/aos.js"></script>
+    <!-- GSAP -->
+    <script src="./asset/js/gsap/gsap.min.js"></script>
+    <script src="./asset/js/gsap/ScrollTrigger.min.js"></script>
+    <script src="./asset/js/gsap/SplitText.min.js"></script>
+    <!-- INDEX -->
+
+  
+  </head>
+  <body>
+ 
+    <!-- Skip Navigation (접근성 향상) -->
+    <div id="skip-menu">
+        <a href="#gnb" class="skip-link">주요메뉴 바로가기</a>
+        <a href="#main" class="skip-link">본문 바로가기</a>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <!-- Header-inner-->
+        <div class="header-inner">
+            <h1 class="logo">
+                <a href="#" class="link">
+                    <span class="sr-only">taeng's 로고</span>
+                </a>
+            </h1>
+            <!-- Header gnb -->
+            <div class="gnb" id="gnb">
+                <!-- Header nav -->
+                <nav class="gnb-nav" aria-label="주요 메뉴">
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <a href="/content/about.html" class="nav-link">
+                            <span>소개</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/content/projects.html" class="nav-link"><span>포트폴리오</span></a>
+                        </li>
+                        <li>
+                            <a href="/content/skills" class="nav-link"><span>기술</span></a>
+                        </li>
+                        <li>
+                            <a href="/content/contact" class="nav-link"><span>연락</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header nav end -->
+                <!--Mobile-Open top -->
+                <button type="button" class="m_open-btn">
+                        <span class="line-top"></span>
+                        <span class="line-bottom"></span>
+                </button>
+                <!--Mobile-Open end-->
+                <!--Mobile -->
+                <div class="m_header">
+                    <ul class="m_nav-ul">
+                    <li class="m_nav-li">
+                        <a href="/" class="nav-link"><span>Home</span></a>
+                    </li>
+                    <li>
+                        <a href="/about" class="nav-link"><span>About</span></a>
+                        
+                        
+                    </li>
+                    <li>
+                        <a href="/process" class="nav-link"><span>Process</span></a>
+                    </li>
+                    <li>
+                        <a href="/insight" class="nav-link"><span>Insight</span></a>
+                    </li>
+                        
+                    
+                    <li>
+                        <a href="/contact" class="m_link"><span>Contact</span></a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Mobile end-->
+            </div>
+            <!-- Header gnb end-->
+        </div>
+        <!-- Header-inner end-->
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" role="main">
+      <section class="sc intro">
+           <div class="loader"></div>
+          <div class="loader"></div>
+          <div class="loader"></div>
+          <div class="loader"></div>
+
+        <h2 class="sc-con intro-con">
+            <p class="intro-txt first">Welcome to</p>
+            <p class="intro-txt second">
+              <span class="point">Taeng’s</span>Portfolio
+            </p>
+        </h2>
+      </section>
+      <section class="sc main-content">
+        <div class="sc-con">
+          <a href="/content/about.html" class="link">
+            <span class="bold title">소개</span>
+          </a>
+          <a href="/content/projects.html" class="link">
+            <span class="bold title">포트폴리오</span>
+          </a>
+          <a href="/content/skills.html" class="link">
+            <span class="bold title">기술</span>
+          </a>
+          <a href="/content/contact.html" class="link">
+            <span class="bold title">연락</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+      <div class="inner">
+        <p>&copy; 2025 김태은. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/asset/js/index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="김태은 포트폴리오 사이트입니다." />
+    <meta
+        name="keywords"
+        content="웹표준, 포트폴리오, 프론트엔드, React, HTML, CSS, 백엔드,스프링부트,자바,파이썬"
+    />
+    <meta name="author" content="김태은" />
+
+    <title>김태은 웹포트폴리오</title>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/font.css" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+    <link rel="stylesheet" href="/asset/css/index.css">
+  </head>
+  <body>
+    <!-- Skip Navigation (접근성 향상) -->
+    <a href="#main" class="skip">본문 바로가기</a>
+
+    <!-- Header -->
+    <header id="header" role="banner">
+      <div class="inner">
+        <h1><a href="/">김태은 포트폴리오</a></h1>
+        <nav id="gnb" role="navigation" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="/content/about.html">소개</a></li>
+            <li><a href="/content/projects.html">작업물</a></li>
+            <!-- <li><a href="/content/skills">기술</a></li>
+            <li><a href="/content/contact">연락처</a></li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" role="main">
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="inner">
+          <h2>About Me</h2>
+          <p>
+            안녕하세요. 웹표준과 반응형 웹에 기반한 사용자 중심의 UI를 설계하는
+            웹퍼블리셔 김태은입니다.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="inner">
+          <h2>Skills</h2>
+          <ul class="skill-list">
+            <li>HTML5 / CSS3 / JavaScript(ES6+)</li>
+            <li>React / Vite / Node(Express)</li>
+            <li>Spring Boot / MyBatis / Oracle DB</li>
+            <li>Git / Figma / Zeplin / REST API</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="inner">
+          <h2>Projects</h2>
+
+          <article class="project-item">
+            <h3>충북도민체전 웹사이트</h3>
+            <p>
+              웹디자인 팀과 협업하여 반응형 페이지를 구현하고, 웹표준 및
+              접근성을 준수한 구조로 제작했습니다.
+            </p>
+            <a href="#" class="btn">자세히 보기</a>
+          </article>
+
+          <article class="project-item">
+            <h3>천안시립미술관 리뉴얼</h3>
+            <p>
+              React 기반 컴포넌트 구조 설계 및 유지보수 효율성을 높인
+              프로젝트입니다.
+            </p>
+            <a href="#" class="btn">자세히 보기</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="inner">
+          <h2>Contact</h2>
+          <address>
+            <p>
+              Email: <a href="mailto:taeeun@example.com">taeeun@example.com</a>
+            </p>
+            <p>
+              GitHub:
+              <a href="https://github.com/taeeun" target="_blank"
+                >github.com/taeeun</a
+              >
+            </p>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+      <div class="inner">
+        <p>&copy; 2025 김태은. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
