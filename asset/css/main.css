@@ -33,7 +33,7 @@
 }
 /* intro */
 .sc.intro{ position: relative; transition: all 0.3s;}
-.sc.intro.hide{opacity:0;visibility: hidden;}
+.sc.intro.hide{opacity:0;visibility: hidden; position:absolute;z-index: -1;}
 .sc.intro .intro-con{
     color: #fff;
     position: relative;
