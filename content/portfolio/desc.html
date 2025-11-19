@@ -12,7 +12,7 @@
       content="김태은 포트폴리오,웹표준,김태은, 포트폴리오, 프론트엔드, React, HTML, CSS, 백엔드,스프링부트,자바,파이썬"
     />
     <meta name="description" content="김태은의 포트폴리오 웹페이지입니다." />
-    <meta name="image" content="./asset/img/common/favicon.png" />
+    <meta name="image" content="../../asset/img/common/favicon.png" />
     <meta name="application-name" content="김태은 포트폴리오" />
     <meta name="robots" content="index, follow" />
     <!-- <meta http-equiv="refresh" content="180" /> -->
@@ -21,7 +21,7 @@
     <meta property="og:title" content="김태은 포트폴리오" />
     <meta property="og:site_name" content="김태은 포트폴리오" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./asset/img/common/favicon.ico" />
+    <meta property="og:image" content="../../asset/img/common/favicon.ico" />
     <meta property="og:url" content="http://kbo831.github.io/aboutMe25" />
     <meta
       property="og:description"
@@ -31,21 +31,21 @@
     <title>김태은 포트폴리오</title>
 
     <!-- 파비콘 -->
-    <link rel="icon" href="./asset/img/common/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../../asset/img/common/favicon.ico" type="image/x-icon" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./asset/css/common/reset.css" />
+    <link rel="stylesheet" href="../../asset/css/common/reset.css" />
     <!-- SWIPER -->
-    <link rel="stylesheet" href="./asset/css/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="../../asset/css/swiper/swiper-bundle.css" />
     <!-- AOS-->
-    <link href="./asset/css/aos/aos.css" rel="stylesheet" />
+    <link href="../../asset/css/aos/aos.css" rel="stylesheet" />
     <!-- font -->
-    <link rel="stylesheet" href="./asset/font/gmarketSans/GmarketSans.css" />
-    <link rel="stylesheet" href="./asset/font/pretendard/pretendard.css" />
-    <link rel="stylesheet" href="./asset/css/common/layout.css" />
-    <link rel="stylesheet" href="./asset/css/common/header.css" />
-    <link rel="stylesheet" href="./asset/css/common/footer.css" />
-    <link rel="stylesheet" href="./asset/css/main.css" />
+    <link rel="stylesheet" href="../../asset/font/gmarketSans/GmarketSans.css" />
+    <link rel="stylesheet" href="../../asset/font/pretendard/pretendard.css" />
+    <link rel="stylesheet" href="../../asset/css/common/layout.css" />
+    <link rel="stylesheet" href="../../asset/css/common/header.css" />
+    <link rel="stylesheet" href="../../asset/css/common/footer.css" />
+    <link rel="stylesheet" href="../../asset/css/main.css" />
     <!-- 구글애널리틱스 코드, 네이버 에널리틱스? -->
 
     <!-- 자바스크립트  -->
@@ -59,18 +59,18 @@
     <script src="js/respond.js"></script>
     <![endif]-->
     <!-- JQUERY -->
-    <script src="./asset/js/jquery/jquery.min.js"></script>
+    <script src="../../asset/js/jquery/jquery.min.js"></script>
     <!-- SWIPER -->
-    <script src="./asset/js/swiper/swiper-bundle.js"></script>
+    <script src="../../asset/js/swiper/swiper-bundle.js"></script>
     <!-- AOS -->
-    <script src="./asset/js/aos/aos.js"></script>
+    <script src="../../asset/js/aos/aos.js"></script>
     <!-- GSAP -->
-    <script src="./asset/js/gsap/gsap.min.js"></script>
-    <script src="./asset/js/gsap/scrollTrigger.min.js"></script>
-    <script src="./asset/js/gsap/SplitText.min.js"></script>
+    <script src="../../asset/js/gsap/gsap.min.js"></script>
+    <script src="../../asset/js/gsap/scrollTrigger.min.js"></script>
+    <script src="../../asset/js/gsap/SplitText.min.js"></script>
     <!-- INDEX -->
+    <link rel="stylesheet" href="../../asset/css/content/projects.css">
 
-  
   </head>
   <body>
  
@@ -94,18 +94,18 @@
                 <nav class="gnb-nav" aria-label="주요 메뉴">
                     <ul class="nav-ul">
                         <li class="nav-li">
-                            <a href="/content/about/about.html" class="nav-link">
+                            <a href="/content/about.html" class="nav-link">
                             <span>소개</span>
                             </a>
                         </li>
-                        <li class="nav-li">
-                            <a href="/content/projects/projects.html" class="nav-link"><span>포트폴리오</span></a>
+                        <li>
+                            <a href="/content/projects.html" class="nav-link"><span>포트폴리오</span></a>
                         </li>
-                        <li class="nav-li">
-                            <a href="/content/skills/skills.html" class="nav-link"><span>기술</span></a>
+                        <li>
+                            <a href="/content/skills" class="nav-link"><span>기술</span></a>
                         </li>
-                        <li class="nav-li">
-                            <a href="/content/contact/contact.html" class="nav-link"><span>연락</span></a>
+                        <li>
+                            <a href="/content/contact" class="nav-link"><span>연락</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -117,7 +117,7 @@
                 </button>
                 <!--Mobile-Open end-->
                 <!--Mobile -->
-               <div class="m_header">
+                <div class="m_header">
                     <ul class="nav-ul">
                         <li class="nav-li">
                             <a href="/content/about.html" class="nav-link">
@@ -144,33 +144,41 @@
 
     <!-- Main Content -->
     <main id="main" role="main">
-      <section class="sc intro">
-           <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
-          <div class="loader"></div>
 
-        <h2 class="sc-con intro-con">
-            <p class="intro-txt first">Welcome to</p>
-            <p class="intro-txt second">
-              <span class="point">Taeng’s</span>Portfolio
-            </p>
-        </h2>
-      </section>
-      <section class="sc main-content">
-        <div class="sc-con">
-          <a href="/content/about.html" class="link">
-            <span class="bold title">소개</span>
-          </a>
-          <a href="/content/projects.html" class="link">
-            <span class="bold title">포트폴리오</span>
-          </a>
-          <a href="/content/skills.html" class="link">
-            <span class="bold title">기술</span>
-          </a>
-          <a href="/content/contact.html" class="link">
-            <span class="bold title">연락</span>
-          </a>
+      <section class="sc sub-content">
+         <div id="Portfolio" class="sc-con" >
+
+            <h2 class="sc-title">Portfolio</h2>
+
+            <!-- 포트폴리오 ul -->
+            <ul class="ul full-list">
+                <!-- thebook -->
+                <li class="li">
+                    <a href="./portfolio/desc.html" class="link" target="_blank" title="도서판매 깃저장소 바로가기, 새창열림">
+                        <div class="lst-con left">
+                            <h3 class="link-title"><i class="num">01.</i>도서판매</h3>
+                            <div class="desc">
+                                <p>일반회원과 관리자로 권한을 분리한 도서 판매 웹 서비스</p>
+                                <strong class="desc-title">클라이언트</strong>                                
+                                <p>회원가입, 마이페이지(찜·개인정보·배송지 관리), 장바구니, 결제, 도서 조회 및 검색 기능을 이용 가능</p>
+                                <strong class="desc-title">관리자</strong>
+                                <p>방문자 통계, 페이지 클릭뷰, 도서 등록/수정/삭제, 게시판 문의 관리 기능을 통해 전체 사이트를 운영 가능</p>
+                            </div>
+                        </div>
+                        <figure class="lst-con right">
+                            <div class="img">
+                                <div class="img-inner">
+                                    <img src="" alt="도서판매포트폴리오 이미지">
+                                </div>
+                            </div>
+                        </figure>
+                    </a>
+                </li>
+                <!-- thebook -->
+           
+                <!-- End -->
+            </ul>
+            <!-- 포트폴리오 ul -->
         </div>
       </section>
     </main>
@@ -182,6 +190,6 @@
       </div>
     </footer>
     <script src="./asset/js/common/layout.js"></script>
-    <script src="./asset/js/index.js"></script>
+     <script src="./asset/js/content/porject.js"></script>
   </body>
 </html>
