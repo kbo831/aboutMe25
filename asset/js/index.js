@@ -67,12 +67,16 @@ $(document).ready(function () {
           // 애니메이션 끝나면 스크롤 풀기
           $("body").css("overflow", "");
         })
-        .add(() => {
-          document.querySelector(".sc.intro")?.classList.add("hide");
-        }, "+=1");
+        // .add(() => {
+        //   document.querySelector(".sc.intro")?.classList.add("hide");
+        // }, "+=1");
 
       //end
     });
     //end
   });
+
+
+
+
 });
