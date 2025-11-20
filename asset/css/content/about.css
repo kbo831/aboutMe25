@@ -1,0 +1,22 @@
+#about .small-text{margin: 0 2rem;}
+#about .full-list .link{}
+#about .lst-con{position: relative;}
+
+#about .lst-con.left{}
+#about .figure,#about .img-box{max-width: 15rem;width: 100%;}
+#about .img-box{background:rgba(255,255,255,0.4); border-radius: 2rem; overflow: hidden; transition: all 0.3s;}
+#about .img-box img{position: relative; bottom: -1rem;  width: 80%; margin: 0 auto; }
+
+#about .figure{border:transparent; }
+#about .figure .img-box{position: relative;}
+#about .figure .img-box + strong {padding: 1rem; border :1px solid #fff; border-radius: 1rem; width: 100%; margin-top: 1rem; font-size: 1.5rem;}
+
+#about .figure:hover .img-box ,#about .figure:focus .img-box{background:rgba(255,255,255,1) }
+#about .figure:hover .img-box  + strong  ,#about .figure:focus .img-box  + strong {background:rgba(255,255,255,1);color:#000 }
+
+
+#real-photo{opacity: 0;visibility: hidden; position: absolute;left: 0; top: 0;}
+#real-photo.active{opacity: 1;visibility: visible;}
+
+
+#about .lst-con.right{padding-left: 3rem;}

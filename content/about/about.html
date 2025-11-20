@@ -42,10 +42,11 @@
     <!-- font -->
     <link rel="stylesheet" href="../../asset/font/gmarketSans/GmarketSans.css" />
     <link rel="stylesheet" href="../../asset/font/pretendard/pretendard.css" />
+    <link rel="stylesheet" href="../../asset/css/common/common.css" />
     <link rel="stylesheet" href="../../asset/css/common/layout.css" />
     <link rel="stylesheet" href="../../asset/css/common/header.css" />
     <link rel="stylesheet" href="../../asset/css/common/footer.css" />
-    <link rel="stylesheet" href="../../asset/css/main.css" />
+    <link rel="stylesheet" href="../../asset/css/content/about.css" />
     <!-- 구글애널리틱스 코드, 네이버 에널리틱스? -->
 
     <!-- 자바스크립트  -->
@@ -69,7 +70,7 @@
     <script src="../../asset/js/gsap/scrollTrigger.min.js"></script>
     <script src="../../asset/js/gsap/SplitText.min.js"></script>
     <!-- INDEX -->
-    <link rel="stylesheet" href="../../asset/css../projects.css">
+    <link rel="stylesheet" href="../../asset/css/content/about.css">
 
   </head>
   <body>
@@ -146,71 +147,89 @@
     <main id="main" role="main">
 
       <section class="sc sub-content">
-         <div id="Portfolio" class="sc-con" >
+         <div id="about" class="sc-con" >
 
-            <h2 class="sc-title">Portfolio</h2>
+            <h2 class="sc-title">ABOUT</h2>
 
             <!-- 포트폴리오 ul -->
             <ul class="ul full-list">
                 <!-- thebook -->
                 <li class="li">
-                    <a href="./portfolio/desc.html" class="link" target="_blank" title="도서판매 깃저장소 바로가기, 새창열림">
+                    <div class="link">
                         <div class="lst-con left">
-                            <h3 class="link-title"><i class="num">01.</i>도서판매</h3>
-                            <div class="desc">
-                                <p>일반회원과 관리자로 권한을 분리한 도서 판매 웹 서비스</p>
-                                <strong class="desc-title">클라이언트</strong>                                
-                                <p>회원가입, 마이페이지(찜·개인정보·배송지 관리), 장바구니, 결제, 도서 조회 및 검색 기능을 이용 가능</p>
-                                <strong class="desc-title">관리자</strong>
-                                <p>방문자 통계, 페이지 클릭뷰, 도서 등록/수정/삭제, 게시판 문의 관리 기능을 통해 전체 사이트를 운영 가능</p>
+                            <!-- 버튼 부르면 김태은 증명사진 뜸? -->
+                            <button class="figure" type="button" title="증명사진보기 버튼">
+                                <div class="img-box">
+                                    <div class="img-inner">
+                                        <img src="../../asset/img/about/kimtaeng.png" alt="김태은증명사진이미지">
+                                    </div>
+                                </div>
+                                <strong class="">증명사진보기</strong>
+                            </button>
+                            <div class="img-box" id="real-photo">
+                                    <div class="img-inner">
+                                        <img src="../../asset/img/about/kimtaeng.png" alt="김태은증명사진이미지">
+                                    </div>
                             </div>
                         </div>
-                        <figure class="lst-con right">
-                            <div class="img">
-                                <div class="img-inner">
-                                    <img src="" alt="도서판매포트폴리오 이미지">
-                                </div>
+                        <div class="lst-con right">
+                            <h3 class="link-title">김태은<span class="small-text">여.1991.(34세)</span></h3>
+                            <!-- 개인정보 -->
+                            <div class="personal-info">
+                                <ul class="desc">
+                                    <li>
+                                        <strong class="desc-title">e-mail</strong>
+                                        kbo831@naver.com
+                                    </li>
+                                    <li>
+                                        <strong class="desc-title">phone</strong>
+                                        010-2747-xxxx
+                                    </li>
+                                    <li>
+                                        <strong class="desc-title">address</strong>
+                                        익산시 xxx동 xxx로
+                                    </li>
+                                </ul>
                             </div>
-                        </figure>
-                    </a>
+                            <!-- 개인정보 -->
+                            <!-- 경력 -->
+                            <div class="career">
+                                <h4 class="con-title">경력</h4>
+                                <ul class="desc">
+                                    <li>
+                                        <strong class="desc-title">지오넷</strong>
+                                        21.05.03 ~ 23.05.12
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 경력 -->
+                            <!-- 학력 -->
+                            <div class="education">
+                                <h4 class="con-title">학력</h4>
+                                <ul class="desc">
+                                    <li>
+                                        <strong class="desc-title">우석대학교</strong>
+                                        신문방송학과, 중어중문학과 졸업
+                                    </li>
+                                    <li>
+                                        <strong class="desc-title">산동사범대학교</strong>
+                                        국제한어교육학과 석사졸업
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 학력 -->
+                        </div>
+                    </div>
                 </li>
                 <!-- thebook -->
                 <!-- Start -->
                 <li class="li">
-                    <a href="" class="link" target="_blank">
-                            <h3 class="link-title"><i class="num">02.</i>사이드프로젝트</h3>
-                            <div class="desc">
-                                <p>일반회원과 관리자로 권한을 분리한 도서 판매 웹 서비스</p>
-                                <strong class="desc-title">클라이언트</strong>                                
-                                <p>회원가입, 마이페이지(찜·개인정보·배송지 관리), 장바구니, 결제, 도서 조회 및 검색 기능을 이용 가능</p>
-                                <strong class="desc-title">관리자</strong>
-                                <p>방문자 통계, 페이지 클릭뷰, 도서 등록/수정/삭제, 게시판 문의 관리 기능을 통해 전체 사이트를 운영 가능</p>
-                            </div>
-                            <div class="img">
-                                <div class="img-inner">
-                                    <img src="" alt="도서판매포트폴리오 이미지">
-                                </div>
-                            </div>
-                    </a>
+                  
                 </li>
                 <!-- End -->
                 <!-- Start -->
                 <li class="li">
-                    <a href="" class="link" target="_blank">
-                            <h3 class="link-title"><i class="num">03.</i>사이드프로젝트</h3>
-                            <div class="desc">
-                                <p>일반회원과 관리자로 권한을 분리한 도서 판매 웹 서비스</p>
-                                <strong class="desc-title">클라이언트</strong>                                
-                                <p>회원가입, 마이페이지(찜·개인정보·배송지 관리), 장바구니, 결제, 도서 조회 및 검색 기능을 이용 가능</p>
-                                <strong class="desc-title">관리자</strong>
-                                <p>방문자 통계, 페이지 클릭뷰, 도서 등록/수정/삭제, 게시판 문의 관리 기능을 통해 전체 사이트를 운영 가능</p>
-                            </div>
-                            <div class="img">
-                                <div class="img-inner">
-                                    <img src="" alt="도서판매포트폴리오 이미지">
-                                </div>
-                            </div>
-                    </a>
+                   
                 </li>
                 <!-- End -->
             </ul>
@@ -225,7 +244,7 @@
         <p>&copy; 2025 김태은. All rights reserved.</p>
       </div>
     </footer>
-    <script src="./asset/js/common/layout.js"></script>
-     <script src="./asset/js../porject.js"></script>
+    <script src="../../asset/js/common/layout.js"></script>
+    <script src="../../asset/js/content/about.js"></script>
   </body>
 </html>
