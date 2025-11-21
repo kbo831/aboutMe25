@@ -5,7 +5,7 @@
 
 /* title */
 .con-title{font-size: 2.5rem;}
-.solid-title{border-bottom:1px solid #fff;padding-bottom: 2rem;margin-bottom: 2rem;}
+.solid-title{border-bottom:1px solid #fff;padding-bottom: 3rem;margin-bottom: 3rem;}
 
 /* desc */
 .desc{word-wrap: break-word; word-break: keep-all;}
@@ -42,3 +42,7 @@ border-top: 2px solid #fff;
 
 /* info-row */
 .info-row{display: flex; margin: 2rem 0; align-items: center;}
+
+/* tultip */
+
+.tultip{border:1px solid #fff;padding: 0.5rem; font-size: 1.5rem; font-weight: normal;}

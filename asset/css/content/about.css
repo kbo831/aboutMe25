@@ -1,36 +1,57 @@
+.tultip.volunteer{}
+.tultip.social{}
+.tultip.date{}
+
 #about .small-text{margin: 0 2rem;}
-#about .con-title {margin-right: 3rem;}
 #about .full-list .link{}
-#about .lst-con{position: relative;}
+#about .info-row{align-items:flex-start;}
 
-#about .lst-con.left{height: 45rem;}
-#about .figure,#about .img-box{/* max-width: 35rem; *//* width: 100%; */min-width: 34rem;}
-#about .img-box{background:rgba(255,255,255,0.4); border-radius: 2rem; overflow: hidden; transition: all 0.3s;}
-#about .img-box img{position: absolute;/* bottom: -1rem; */top: 0;width: 100%;margin: 0 auto;height: 100%;left: 50%;transform: translateX(-50%);}
+.simple-info .lst-con{position: relative;}
+.simple-info .con-title {margin-right: 3rem;}
+.simple-info .lst-con.left{height: 45rem;}
+.simple-info .figure,.simple-info .img-box{/* max-width: 35rem; *//* width: 100%; */min-width: 34rem;}
+.simple-info .img-box{background:rgba(255,255,255,0.4); border-radius: 2rem; overflow: hidden; transition: all 0.3s;}
+.simple-info .img-box img{position: absolute;/* bottom: -1rem; */top: 0;width: 100%;margin: 0 auto;height: 100%;left: 50%;transform: translateX(-50%);}
 
-#about .figure{border:transparent;height: 100%;}
-#about .figure .img-box{position: relative;height: 100%;}
-#about .figure .img-box + strong {padding: 1rem;border :1px solid #fff;border-radius: 1rem;width: 100%;margin-top: 1rem;font-size: 1.5rem;display: inline-block;}
+.simple-info .figure{border:transparent;height: 100%;}
+.simple-info .figure .img-box{position: relative;height: 100%;}
+.simple-info .figure .img-box + strong {padding: 1rem;border :1px solid #fff;border-radius: 1rem;width: 100%;margin-top: 1rem;font-size: 1.5rem;display: inline-block;}
 
-#about .figure:hover .img-box ,#about .figure:focus .img-box{background:rgba(255,255,255,1) }
-#about .figure:hover .img-box  + strong  ,#about .figure:focus .img-box  + strong {background:rgba(255,255,255,1);color:#000 }
+.simple-info .figure:hover .img-box ,.simple-info .figure:focus .img-box{background:rgba(255,255,255,1) }
+.simple-info .figure:hover .img-box  + strong  ,.simple-info .figure:focus .img-box  + strong {background:rgba(255,255,255,1);color:#000 }
 
 
 #real-photo{opacity: 0;visibility: hidden; position: absolute;left: 0; top: 0;}
 #real-photo.active{opacity: 1;visibility: visible;}
 
 
-#about .lst-con.right{padding: 5rem; flex:1}
-#about .info-row{align-items:flex-start;}
-#about .info-row .con-title{min-width: 6rem;}
+.simple-info .lst-con.right{padding: 5rem; flex:1}
+.simple-info  .info-row .con-title{min-width: 6rem;}
 
-#about .info-row .desc{flex:1}
-#about .info-row .desc-title{white-space:nowrap;}
-#about .info-row .desc-title ~ span{margin-right: 2rem;}
+.simple-info  .info-row .desc{flex:1}
+.simple-info  .info-row .desc-title ~ span{margin-right: .5rem;}
 
 /* personal-info */
 #about .personal-info .desc > li {margin-right: 3rem; display: inline-block;}
 /* career */
 #about .info-row:not(:first-of-type) .desc-title{min-width:24rem;}
 /* first-of-type 과 fist-child 차이점 */
-#about .info-row:not(:first-of-type) .desc > li {display: flex; margin: .5rem 0 1rem 0 ; align-items: flex-start;}
+#about .info-row:not(:first-of-type) .desc > li {display: flex; margin: .5rem 0 1rem 0 ; align-items: flex-start;flex-wrap: wrap; word-break: keep-all;}
+
+/* activity */
+
+.activity{}
+.activity .solid-title{margin-bottom:0;}
+.full-list .activity .link{display: block;}
+
+.full-list .activity .desc{position:relative;padding:6rem 2rem 6rem 10rem;}
+.full-list .activity .desc:before{content: ''; display: block;
+width: 1px; background-color: #fff; position: absolute; left:5rem; top: 0; height: 100%;
+}
+.full-list .activity li { font-size: 2.5rem;}
+.full-list .activity li:not(:last-child) {margin-bottom: 3rem;}
+.full-list .activity .desc-title{ display: block;margin-top: 1rem;}
+.full-list .activity .desc-title ~ span{}
+
+/* tultip */
+.date{font-size: 1.8rem; font-weight: normal;}
