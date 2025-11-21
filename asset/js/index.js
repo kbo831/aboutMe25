@@ -18,10 +18,10 @@ $(document).ready(function () {
     tl.to(".loader", {
       transformOrigin: "left bottom",
       rotate: -100,
-      duration: 2,
+      duration: .8,
       ease: "sine.in",
       stagger: {
-        each: 0.3,
+        each: 0.2,
         from: "end",
       },
     }).add(() => {
@@ -46,9 +46,9 @@ $(document).ready(function () {
         autoAlpha: 1, // opacity :1 , visibility:visible
         opacity: 1,
         ease: "power3.out",
-        duration: 1,
+        duration: .8,
         stagger: {
-          each: 0.05,
+          each: 0.03,
         },
       });
 
