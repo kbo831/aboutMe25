@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    const photoOpenBtn = $(".figure");
+    const photoOpenBtn = $("button.figure");
     photoOpenBtn.click(function(){
             const realPhoto = $("#real-photo");
             if( realPhoto.hasClass("active")){

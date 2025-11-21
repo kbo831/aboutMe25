@@ -24,7 +24,7 @@
     margin: 0;padding: 0;
 }
 html,body{display:block; position: relative; width: 100%; min-height: 100vh; }
-html{background: #000; 
+html{background: rgba(0,0,0,0.8); 
     font-size: 62.5%;  /* 1rem = 10px 기준설정값  */ }
 body{
     max-width: var(--full-max-with);
