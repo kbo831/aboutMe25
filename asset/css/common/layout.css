@@ -5,6 +5,7 @@
     --footer-font-size: clamp(1rem, 0.5vw + 0.5rem, 1.6rem); /* 10px ~ 16px */
     --gnb-gap:clamp(3rem,1vw + 0.5rem, 4rem);
     --layout-padding:0 6rem;
+    --full-max-with:1920px;
 }
 
 @media (max-width: 768px) {
@@ -26,6 +27,8 @@ html,body{display:block; position: relative; width: 100%; min-height: 100vh; }
 html{background: #000; 
     font-size: 62.5%;  /* 1rem = 10px 기준설정값  */ }
 body{
+    max-width: var(--full-max-with);
+    margin: 0 auto;
     font-size: var(--body-font-size);
     font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color:#fff}
 main{}

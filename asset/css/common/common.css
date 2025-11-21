@@ -4,11 +4,11 @@
 .small-text{font-size: 2rem;}
 
 /* title */
-.con-title{}
+.con-title{font-size: 2.5rem;}
 
 /* desc */
 .desc{word-wrap: break-word; word-break: keep-all;}
-.desc-title{font-weight: bold; margin: 2rem 0 1rem 0;}
+.desc-title{font-weight: bold;}
 .desc-title:after{content:''; display:inline-block;}
 
 
@@ -32,10 +32,12 @@ border-top: 2px solid #fff;
 }
 .full-list .link-title{color:#fff;font-size: 4rem; font-family: "GmarketSans";}
 .full-list .num{margin-right: 10px;}
-.full-list .desc{margin-top: 5rem;
-word-wrap: break-word; word-break: keep-all;}
+.full-list .desc{word-wrap: break-word; word-break: keep-all;}
 .full-list .desc p{}
 
 .img-box,.img-inner,.img-inner img{max-width:100%; width: 100%;}
 .lst-con{}
 .lst-con .img-inner img{ }
+
+/* info-row */
+.info-row{display: block; margin: 2rem 0;}

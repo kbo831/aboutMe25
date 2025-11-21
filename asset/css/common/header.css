@@ -1,12 +1,15 @@
 /* pc-header */
 .header{ 
-}
-.header-inner{
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    max-width: var(--full-max-with);
     z-index: 9999;
+    margin:0 auto
+}
+.header-inner{
     background-color: transparent;
     transition: all 0.3s;
     display: flex; align-items: center; justify-content: space-between;width: 100%;

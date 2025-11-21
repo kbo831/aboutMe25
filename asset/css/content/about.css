@@ -1,9 +1,10 @@
 #about .small-text{margin: 0 2rem;}
+#about .con-title {margin-right: 3rem;}
 #about .full-list .link{}
 #about .lst-con{position: relative;}
 
 #about .lst-con.left{}
-#about .figure,#about .img-box{max-width: 15rem;width: 100%;}
+#about .figure,#about .img-box{max-width: 40rem;width: 100%;}
 #about .img-box{background:rgba(255,255,255,0.4); border-radius: 2rem; overflow: hidden; transition: all 0.3s;}
 #about .img-box img{position: relative; bottom: -1rem;  width: 80%; margin: 0 auto; }
 
@@ -19,4 +20,6 @@
 #real-photo.active{opacity: 1;visibility: visible;}
 
 
-#about .lst-con.right{padding-left: 3rem;}
+#about .lst-con.right{padding: 5rem;}
+#about .personal-info .desc-title {}
+
