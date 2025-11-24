@@ -43,7 +43,7 @@
 
 /* intro */
 .intro{ position: relative; transition: all 0.3s;}
-.intro .intro-con.hide{opacity:0;visibility: hidden;  transition: 0.4s;}
+/* .intro .intro-con{opacity: 0;visibility: hidden;} */
 .intro .intro-text{
     color: #fff;
     position: relative;

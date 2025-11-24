@@ -3,15 +3,28 @@ $(document).ready(function () {
   gsap.defaults({ ease: "power3.out" });
 
   $(window).on("load", function () {
-    gsap.to(".intro-con", {
-      y: 0,
-      opacity: 1,
-      duration: 1,
-      stagger: 0.1,
-      onComplete: () => {
+
+       //spreadCard 
+        function spreadCard(){
+            console.log("스프레드 카드 실행")
+            const cards = gsap.utils.toArray(".skip-card .link");
+           if (window.innerWidth > 1100) { // 윈도우 화면 1100px 이상에서만 
+              const gap = 30;  // 카드 간격(px)
+              const center = 50; // 가운데 (%)
+              cards.forEach((card, i) => {
+                const offset = (i - 1) * gap; 
+                gsap.to(card, {
+                  left: `calc(${center}% + ${offset}%)`,
+                  duration: 1,
+                  ease: "power3.out"
+                });
+              });
+            }
+        }
+
         // split + set
         const splitText = SplitText.create(".intro-txt", { type: "chars" });
-        gsap.set(splitText.chars, { autoAlpha: 0, yPercent: -200 });
+        gsap.set(splitText.chars, { autoAlpha: 0, yPercent: -200});
 
         // chars 등장
         gsap.to(splitText.chars, {
@@ -35,20 +48,7 @@ $(document).ready(function () {
                 { opacity: 1, visibility: "visible", y: 0, duration: 1, ease: "power3.out",
                   onComplete: () => {
                       console.log("skip-card 애니메이션 완료!");
-                    if (window.innerWidth > 1100) { // 윈도우 화면 1100px 이상에서만 
-                        const gap = 30;  // 카드 간격(px)
-                        const cards = gsap.utils.toArray(".skip-card .link");
-                        const center = 50; // 가운데 (%)
-
-                        cards.forEach((card, i) => {
-                          const offset = (i - 1) * gap; 
-                          gsap.to(card, {
-                            left: `calc(${center}% + ${offset}%)`,
-                            duration: 1,
-                            ease: "power3.out"
-                          });
-                        });
-                    }
+                      spreadCard();
                   }
                  } // 마지막위치 
               );
@@ -56,12 +56,8 @@ $(document).ready(function () {
             });
           }
         });
-
-     
-        
-       
-
-      }
-    });
-  });
+        //end
+      });
 });
+
+
