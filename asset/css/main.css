@@ -3,11 +3,20 @@
 
 
 #main{}
-.sc{min-height: 100vh; display:flex;align-items: center; justify-content: center; width: 100%;}
-.sc-con{width: 100%;}
-
+.sc{min-height: 100vh;  width: 100%;}
+.sc-inner,.sc-con{width: 100%;}
+.sc-inner{   
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
 /* loader */
-.loader {
+/* .loader {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -17,24 +26,25 @@
 }
 
 .loader:nth-child(1) {
-  background: #dddddd; /* #e4e4e4 darken by 6% */
+  background: #dddddd;
 }
 
 .loader:nth-child(2) {
-  background: #d6d6d6; /* darken by 12% */
+  background: #d6d6d6; 
 }
 
 .loader:nth-child(3) {
-  background: #cfcfcf; /* darken by 18% */
+  background: #cfcfcf; 
 }
 
 .loader:nth-child(4) {
-  background: #c8c8c8; /* darken by 24% */
-}
+  background: #c8c8c8;
+} */
+
 /* intro */
-.sc.intro{ position: relative; transition: all 0.3s;}
-.sc.intro.hide{opacity:0;visibility: hidden; position:absolute;z-index: -1;}
-.sc.intro .intro-con{
+.intro{ position: relative; transition: all 0.3s;}
+.intro .intro-con.hide{opacity:0;visibility: hidden;  transition: 0.4s;}
+.intro .intro-text{
     color: #fff;
     position: relative;
     z-index: 2;
@@ -45,12 +55,12 @@
     transform: translateY(2rem);
     transition: all 0.2s;
 }
-.sc.intro .intro-txt{font-size: 6rem; font-weight: bold; display: block; text-align: center; }
-.intro-txt .point{
- 
-}
 
-.sc.intro .intro-con.active{
+
+.intro .intro-txt{font-size: 6rem; font-weight: bold; display: block; text-align: center; }
+.intro-txt .point{}
+
+.intro .intro-text.active{
     opacity:1;visibility: visible; transform: translateY(0);
 }
 
@@ -69,3 +79,103 @@
     transform: translateX(2px) rotate(2deg);
   }
 }
+
+/* Skip-card */
+.skip-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  z-index: 2;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* bg & icon */
+.skip-card .icon,.skip-card .bg{display:inline-block;background-position: center center;  background-size: 100%; background-repeat: no-repeat; }
+/* icon */
+.skip-card .icon{width: 50px;height: 50px;/* position:relative; */margin-right: 1rem;}
+.skip-card .icon.icon01{background-image: url("../img/main/whoiam_small.png");}
+.skip-card .icon.icon02{background-image: url("../img/main/portfolio_small.png");
+  background-size: contain;
+  width: 60px;
+}
+.skip-card .icon.icon03{background-image: url("../img/main/contact_small.png");}
+/* bg */
+.skip-card .bg{width: 250px;height: 250px;position: absolute;pointer-events: none;transition: transform 0.5s ease;z-index: 0;right: 0;bottom: 0;transform: translate(6rem,4rem) scale(1);/* transform-origin: right bottom; */}
+.skip-card .bg.bg01{background-image: url("../img/main/whoiam_big.png");}
+.skip-card .bg.bg02{background-image: url("../img/main/portfolio_big.png");}
+.skip-card .bg.bg03{background-image: url("../img/main/contact_big.png");    background-size: 80%;}
+
+
+.skip-card .link{
+  width:45rem;
+  height: 50rem;
+  color: #333;
+  border: 3px solid #333;
+  border-radius: 3rem;
+  overflow: hidden;
+  position: relative;
+ }
+ .skip-card .link:before{content:"";display: block; width: 100%;height: 100%;background: rgba(0,0,0,0.2); position:absolute;left:50%;top:50%; transform: translate(-50%,-50%); opacity: 0;visibility: hidden; transition: all 0.3s; z-index:1}
+
+.skip-card .link-inner{position: relative;
+padding: 5rem 4rem; width: 100%; height: 100%; z-index:2}
+
+
+.skip-card .link p,.skip-card .link .title{transition: all 0.3s;}
+.skip-card .link p{font-size: 1.8rem;display: flex;align-items: center;justify-content: flex-start;}
+.skip-card .link .title{
+  font-weight: 600;
+  font-family: "GmarketSans";
+  font-size: 4.8rem;
+  position: relative;
+  margin-top: 10px;
+  z-index: 5;
+}
+
+
+.skip-card .first-card{  z-index: 3; background-color: #FFF8D0;}
+.skip-card .second-card{ z-index: 2; background-color: #FFEAEC;}
+.skip-card .third-card{  z-index: 1; background-color: #E8F1FF;}
+
+/* skip-card hover, focus,focus-in*/
+
+.skip-card .link:hover .bg,
+.skip-card .link:focus .bg,
+.skip-card .link:focus-within .bg{
+
+  transform:translate(0,0) scale(1.5);
+
+}
+
+
+ .skip-card .link.first-card:hover,
+.skip-card .link.first-card:focus,
+.skip-card .link.first-card:focus-within{ background-color: #f7e05f;}
+
+
+.skip-card .link.second-card:hover,
+.skip-card .link.second-card:focus,
+.skip-card .link.second-card:focus-within{ background-color: #ffd8dc;}
+
+
+.skip-card .link.third-card:hover,
+.skip-card .link.third-card:focus,
+.skip-card .link.third-card:focus-within{ background-color: #c9deff;} 
+
+
+.skip-card .link:hover .title,
+.skip-card .link:focus .title,
+.skip-card .link:focus-within .title,
+.skip-card .link:hover  p,
+.skip-card .link:focus  p,
+.skip-card .link:focus-within p{
+ font-weight: bold;
+} 
+
+
+/* 인트로가 사라지면 배경이 색이 검정에서 밝은 톤으로 변하고 메인 컨텐츠 애니메이션 실행  */

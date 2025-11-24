@@ -9,22 +9,10 @@ $(document).ready(function () {
   //타임라인 생성 (순서 제어용)
   const tl = gsap.timeline();
 
-  // 애니메이션 시작 전 스크롤 막기
-  $("body").css("overflow", "hidden");
 
   $(window).on("load", function () {
     // 이미지, 폰트, 외부 리소스까지 전부 로드된 후 실행됨
-    // 로드 되고 애니메이션 실행
-    tl.to(".loader", {
-      transformOrigin: "left bottom",
-      rotate: -100,
-      duration: .8,
-      ease: "sine.in",
-      stagger: {
-        each: 0.2,
-        from: "end",
-      },
-    }).add(() => {
+      tl.add(() => {
       //텍스트 애니메이션 실행
 
       //splitText 대상지정 생성
@@ -38,7 +26,7 @@ $(document).ready(function () {
       });
 
       // gsap 애니메이션 전에 active 클래스 추가, intro-con 등장
-      document.querySelector(".intro-con")?.classList.add("active");
+      document.querySelector(".intro")?.classList.add("active");
 
       //gsap 애니메이션 설정
       tl.to(splitText.chars, {
@@ -64,16 +52,12 @@ $(document).ready(function () {
           ?.classList.add("active");
       })
         .add(() => {
-          // 애니메이션 끝나면 스크롤 풀기
-          $("body").css("overflow", "");
-        })
-        // .add(() => {
-        //   document.querySelector(".sc.intro")?.classList.add("hide");
-        // }, "+=1");
+          document.querySelector(".sc-con.intro-con")?.classList.add("hide");
+        }, "+=1");
 
       //end
     });
-    //end
+    //load end
   });
 
 
