@@ -46,3 +46,11 @@ border-top: 2px solid #fff;
 /* tultip */
 
 .tultip{border:1px solid #fff;padding: 0.5rem; font-size: 1.5rem; font-weight: normal;}
+
+.skill-icon{}
+.skill-icon.java{}
+.skill-icon.react{}
+.skill-icon.springboot{}
+.skill-icon.vite{}
+.skill-icon.figma{}
+.skill-icon.photoshap{}

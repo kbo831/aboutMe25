@@ -82,7 +82,7 @@ cubic-bezier(0.42, 0, 0, 1);}
     position: absolute;
     transition: opacity 0.5s cubic-bezier(0.42, 0, 0, 1);
     opacity: 0;
-    right: 5.4rem;
+    right: 2.4rem;
     top: 1rem;
     pointer-events: none; /*클릭,마우스오버,드래그 등 이벤트 방지 속성*/
     min-width:clamp(20rem,1vw + 1rem, 60rem);
@@ -113,5 +113,9 @@ cubic-bezier(0.42, 0, 0, 1);}
 @media (max-width: 640px) {
     .m_open-btn{display: flex;}
     .gnb-nav{display: none;}
+}
+
+@media (max-width: 400px) {
+    .m_header{right: 1.4rem;}
 }
 
