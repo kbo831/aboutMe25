@@ -3,17 +3,19 @@
 .tultip.date{}
 
 #about .small-text{margin: 0 2rem;}
-#about .full-list .link{}
+#about .full-list .link{
+    gap: 5rem;
+}
 #about .info-row{align-items:flex-start;}
 
-.simple-info .lst-con{position: relative;}
+.simple-info .lst-con{position: relative;z-index: 8;}
 .simple-info .con-title {margin-right: 3rem;}
-.simple-info .lst-con.left{height: 45rem;}
-.simple-info .figure,.simple-info .img-box{/* max-width: 35rem; *//* width: 100%; */min-width: 34rem;}
+.simple-info .lst-con.left{height: calc(45rem + 5.5rem);min-width: 33rem;}
+.simple-info .figure,.simple-info .img-box{/* max-width: 35rem; */width: 100%;/* min-width: 34rem; */}
 .simple-info .img-box{background:rgba(255,255,255,0.4); border-radius: 2rem; overflow: hidden; transition: all 0.3s;}
-.simple-info .img-box img{position: absolute;/* bottom: -1rem; */top: 0;width: 100%;margin: 0 auto;height: 100%;left: 50%;transform: translateX(-50%);}
+.simple-info .img-box img{position: absolute;/* bottom: -1rem; */top: 0;width: auto;margin: 0 auto;height: 100%;left: 50%;/* bottom: -30%; */transform: translate(-50%,3%);}
 
-.simple-info .figure{border:transparent;height: 100%;}
+.simple-info .figure{border:transparent;/* height: 100%; */height: 45rem;}
 .simple-info .figure .img-box{position: relative;height: 100%;}
 .simple-info .figure .img-box + strong {padding: 1rem;border :1px solid #fff;border-radius: 1rem;width: 100%;margin-top: 1rem;font-size: 1.5rem;display: inline-block;}
 
@@ -25,7 +27,7 @@
 #real-photo.active{opacity: 1;visibility: visible;}
 
 
-.simple-info .lst-con.right{padding: 5rem; flex:1}
+.simple-info .lst-con.right{padding: 5rem 0;flex:1}
 .simple-info  .info-row .con-title{min-width: 6rem;}
 
 .simple-info  .info-row .desc{flex:1}
@@ -36,7 +38,7 @@
 /* career */
 #about .info-row:not(:first-of-type) .desc-title{min-width:24rem;}
 /* first-of-type 과 fist-child 차이점 */
-#about .info-row:not(:first-of-type) .desc > li {display: flex; margin: .5rem 0 1rem 0 ; align-items: flex-start;flex-wrap: wrap; word-break: keep-all;}
+#about .info-row .desc > li {display: flex; margin: .5rem 0 1rem 0 ; align-items: flex-start;flex-wrap: wrap; word-break: keep-all;}
 
 /* activity */
 
@@ -55,3 +57,34 @@ width: 1px; background-color: #fff; position: absolute; left:5rem; top: 0; heigh
 
 /* tultip */
 .date{font-size: 1.8rem; font-weight: normal;}
+
+@media screen and (max-width:768px) {
+        
+    #about .full-list .link,#about .info-row{flex-wrap: wrap;}
+        #about .full-list .link{gap: 3rem;}
+    .simple-info .lst-con.left{height: calc(15rem + 5.5rem);min-width: 15rem;}
+    .simple-info .figure{height: 15rem;}
+    .simple-info .lst-con.right{padding: 2rem 0;}
+    .full-list .link-title,.small-text{font-size: 2rem;}
+    .simple-info .info-row .con-title{font-size: 1.7rem;min-width: auto;margin-right: 0;width: 100%;}
+    #about .info-row:not(:first-of-type) .desc-title{min-width: 18rem;}
+
+}
+
+@media screen and (max-width:680px) {
+#about .full-list .link{justify-content: center;}
+#about .info-row:not(:first-of-type) .desc-title{min-width: auto;width: 100%;margin-bottom: 0.3rem;}
+.full-list .activity .link{padding: 3rem 0 }
+.full-list .activity li{font-size: 1.8rem;}
+.full-list .activity .desc{padding: 3rem 2rem 3rem 3rem;}
+.full-list .activity .desc:before{left: 1.5rem;}
+
+}
+
+
+@media screen and (max-width:500px) {
+    #about .full-list .link{gap:0}
+    .simple-info .lst-con.right{width: 100%;flex: auto;}
+    .full-list .activity li{font-size: 1.5rem;}
+
+}
