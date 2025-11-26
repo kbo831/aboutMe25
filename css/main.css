@@ -1,0 +1,188 @@
+
+/* common */
+
+
+
+.sc{min-height: 100vh;  width: 100%;}
+.sc-inner,.sc-con{width: 100%;}
+.sc-inner{   
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+/* loader */
+/* .loader {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 200%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.loader:nth-child(1) {
+  background: #dddddd;
+}
+
+.loader:nth-child(2) {
+  background: #d6d6d6; 
+}
+
+.loader:nth-child(3) {
+  background: #cfcfcf; 
+}
+
+.loader:nth-child(4) {
+  background: #c8c8c8;
+} */
+
+/* intro */
+.intro{ position: relative; transition: all 0.3s;}
+/* .intro .intro-con{opacity: 0;visibility: hidden;} */
+.intro .intro-text{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 2rem;
+    opacity:0;
+    visibility: hidden;
+    transform: translateY(2rem);
+    transition: all 0.2s;
+}
+
+
+.intro .intro-txt{font-size: 6rem; font-weight: bold; display: block; text-align: center; }
+.intro-txt .point{}
+
+
+.intro-txt .point.active{text-shadow: 0 0 20px rgb(103, 228, 69);
+    animation: pointText 1s ease-in-out 1;
+}
+/* 진동 애니메이션 */
+@keyframes pointText {
+  0%, 100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-2px) rotate(-2deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(2px) rotate(2deg);
+  }
+}
+
+/* Skip-card */
+.skip-card{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.skip-card .link{
+  height:50rem;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+ }
+
+.skip-card .link .title,.skip-card .link .title span{transition: all 0.3s;}
+.skip-card .link .title span{width: 100%;}
+.skip-card .link .title span:first-of-type{font-size: 1.8rem;  line-height: 1;letter-spacing: -1px; font-weight: normal; width: auto;}
+
+
+.skip-card .bg{
+  transition: transform 0.5s ease;
+  right: 0;bottom: 0;transform: translate(6rem,4rem) scale(1);
+}
+
+.skip-card .first-card{  z-index: 3; background-color: #FFF8D0;}
+.skip-card .second-card{ z-index: 2; background-color: #FFEAEC;}
+.skip-card .third-card{  z-index: 1; background-color: #E8F1FF;}
+
+
+/* skip-card hover, focus,focus-in*/
+
+.skip-card .link:hover .bg,
+.skip-card .link:focus .bg,
+.skip-card .link:focus-within .bg{
+
+  transform:translate(0,0) scale(1.5);
+
+}
+
+ .skip-card .link.first-card:hover,
+.skip-card .link.first-card:focus,
+.skip-card .link.first-card:focus-within{ background-color: #f7e05f;}
+
+
+.skip-card .link.second-card:hover,
+.skip-card .link.second-card:focus,
+.skip-card .link.second-card:focus-within{ background-color: #ffd8dc;}
+
+
+.skip-card .link.third-card:hover,
+.skip-card .link.third-card:focus,
+.skip-card .link.third-card:focus-within{ background-color: #c9deff;} 
+
+
+.skip-card .link:hover .title,
+.skip-card .link:focus .title,
+.skip-card .link:focus-within .title,
+.skip-card .link:hover  p,
+.skip-card .link:focus  p,
+.skip-card .link:focus-within p{
+ font-weight: bold;
+} 
+
+
+@media screen and (max-width: 1500px) {
+  
+  .skip-card .link{max-width: 35rem;}
+  .skip-card .icon,.skip-card .icon.icon02{width: 30px;  height: 40px;}
+  .skip-card .link .title{font-size: 3.0rem;}
+}
+
+@media screen and (max-width: 1100px) {
+  
+  .skip-card .link{
+    max-width: 35rem;
+    height: 35rem;
+    position: relative;
+    left: auto;
+    top:auto;
+    transform:none;}
+  .skip-card .link .title{font-size: 2.8rem;}
+  .skip-card .icon{width: 30px;  height: 40px;}
+  .skip-card .link .bg{
+    width: 190px;
+    height: 170px;
+  }
+  .skip-card .link:hover .bg,
+  .skip-card .link:focus .bg,
+  .skip-card .link:focus-within .bg{
+    transform:translate(0,0) scale(1.2);
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .intro .intro-txt{font-size: 4.5rem;}
+    .skip-card {flex-wrap: wrap;}
+    .skip-card .link{height: 25rem;  min-width: 20rem;}
+    .skip-card .link-inner{padding: 3rem;}
+    .skip-card .link .title span{width: auto;}
+    .skip-card .link .title span:first-of-type{display: none;}
+
+}
+
+@media screen and (max-width:400px) {
+
+  .intro .intro-txt{font-size: 3.5rem;}
+}
