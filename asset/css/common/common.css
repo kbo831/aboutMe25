@@ -14,12 +14,6 @@
 
 
 
-/* sub content common */
-.sub-content{padding-top: 15rem;}
-.sc-con{padding: var(--layout-padding);}
-.sc-title{font-size: clamp(6rem, 1vw + 1rem, 8rem);font-family: "Pretendard"; font-weight: bold;letter-spacing: 0.2rem; margin-bottom:20rem}
-
-
 
 /* list */
 
