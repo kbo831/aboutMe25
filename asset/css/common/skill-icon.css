@@ -1,0 +1,29 @@
+.skill-icon{display: inline-block;width: 4rem;height: 4rem;background-position: center center;background-repeat: no-repeat;background-size:contain;}
+
+/*  Programming Languages */
+.skill-icon.js {background-image: url("../../img/common/JavaScript.png");}
+.skill-icon.java {background-image: url("../../img/common/Java.png")}
+.skill-icon.python {background-image: url("../../img/common/Python.png")}
+.skill-icon.sql {background-image: url("../../img/common/SQL.png")}
+.skill-icon.html {background-image: url("../../img/common/html.png")}
+.skill-icon.css {background-image: url("../../img/common/css.png")}
+.skill-icon.sass {background-image: url("../../img/common/Sass.png")}
+
+/*  Frameworks & Back-end */
+.skill-icon.react {background-image: url("../../img/common/React.png")}
+.skill-icon.spring_boot {background-image: url("../../img/common/springBoot.png")}
+.skill-icon.spring_security {background-image: url("../../img/common/springSecurity.png")}
+
+/* Libraries */
+.skill-icon.swiper{background-image: url("../../img/common/JavaScript.png")}
+.skill-icon.gsap{background-image: url("../../img/common/gsap.png")}
+/*  Tools & Editors */
+.skill-icon.vscode {background-image: url("../../img/common/VSCode.png")}
+.skill-icon.intelliJ {background-image: url("../../img/common/intelliJ.png")}
+.skill-icon.vite {background-image: url("../../img/common/vite.png")}
+
+
+/*  Design Tools */
+.skill-icon.figma {background-image: url("../../img/common/Figma.png")}
+.skill-icon.ps {background-image: url("../../img/common/Photoshop.png")}
+
