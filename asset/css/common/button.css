@@ -1,0 +1,25 @@
+.btn{ border-radius: 5rem; padding:0.5rem 1.5rem 0.8rem 1.5rem;display: inline-flex; align-items: center; justify-content: center;position:relative; line-height: 1;}
+.btn.go-btn{border:1px solid #fff;  overflow: hidden; border-radius: 0.6rem;}
+.btn.go-btn span,.btn.go-btn i{z-index: 1;}
+.btn.go-btn:before{content:''; display:block; width: 0; height: 100%;position: absolute;left:0;top:0;transition: width 0.3s; z-index: -1; opacity: 0; visibility: hidden; background-color: #fff;}
+.btn.go-btn [class*="arrow"]{position:absolute;top:50%;right: 6rem;transform: translateY(-50%);   opacity: 0;
+    visibility: hidden;transition: all 0.2s;}
+.btn.go-btn,.btn.go-btn:before{ transition: all 0.3s;} 
+
+.btn.go-btn:hover,.btn.go-btn:focus {  padding-right: 4rem;}
+.btn.go-btn:hover span,.btn.go-btn:focus span{color:#333}
+.btn.go-btn:hover::before,.btn.go-btn:focus::before{ width: 100%; opacity: 10; visibility: visible;}
+.btn.go-btn:hover [class*="arrow"],.btn.go-btn:focus [class*="arrow"]{
+    opacity: 1;
+    visibility: visible;
+    animation: arrow_ani 0.8s ease-in-out infinite forwards;
+  
+}
+
+@keyframes arrow_ani {
+
+    0%{transform: translate(5rem,-50%);}
+    50%{transform: translate(4rem,-50%);}
+    100%{transform: translate(5rem,-50%);}
+
+}

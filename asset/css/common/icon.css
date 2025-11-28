@@ -1,0 +1,10 @@
+.icon{display:inline-flex;align-items: center; justify-content: center; min-width: 0.5rem; height: 0.5rem;
+background-position:center center;background-repeat: no-repeat; background-size: 100%;}
+.icon.arrow{
+    min-width: 1.5rem;
+    height: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 4.35352L12.8536 3.99996L13.2071 4.35352L12.8536 4.70707L12.5 4.35352ZM0.5 4.85352C0.223858 4.85352 0 4.62966 0 4.35352C0 4.07737 0.223858 3.85352 0.5 3.85352V4.35352V4.85352ZM8.5 0.353516L8.85355 -3.77656e-05L12.8536 3.99996L12.5 4.35352L12.1464 4.70707L8.14645 0.707069L8.5 0.353516ZM12.5 4.35352L12.8536 4.70707L8.85355 8.70707L8.5 8.35352L8.14645 7.99996L12.1464 3.99996L12.5 4.35352ZM12.5 4.35352V4.85352H0.5V4.35352V3.85352H12.5V4.35352Z' fill='white'/%3E%3C/svg%3E%0A");}
+.icon.arrow_black{
+min-width: 1.5rem;
+height: 2rem;
+background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 4.35352L12.8536 3.99996L13.2071 4.35352L12.8536 4.70707L12.5 4.35352ZM0.5 4.85352C0.223858 4.85352 0 4.62966 0 4.35352C0 4.07737 0.223858 3.85352 0.5 3.85352V4.35352V4.85352ZM8.5 0.353516L8.85355 -3.77656e-05L12.8536 3.99996L12.5 4.35352L12.1464 4.70707L8.14645 0.707069L8.5 0.353516ZM12.5 4.35352L12.8536 4.70707L8.85355 8.70707L8.5 8.35352L8.14645 7.99996L12.1464 3.99996L12.5 4.35352ZM12.5 4.35352V4.85352H0.5V4.35352V3.85352H12.5V4.35352Z' fill='%23333333'/%3E%3C/svg%3E%0A");}
