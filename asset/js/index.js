@@ -27,14 +27,14 @@ $(document).ready(function () {
         // split + set
         const splitText = SplitText.create(".intro-txt", { type: "chars" });
         gsap.set(splitText.chars, {
-            autoAlpha: 1,   // opacity 0 + visibility hidden
+            autoAlpha: 0,   // opacity 0 + visibility hidden
             yPercent: -100,   // 아래서 올라오는 효과를 위해 위치 조정
         });
 
         // chars 등장
-        gsap.from(splitText.chars, {
+        gsap.to(splitText.chars, {
           yPercent: 0,
-          autoAlpha:0,//opacity + visibility를 동시에 조절하는 GSAP 속성
+          autoAlpha:1,//opacity + visibility를 동시에 조절하는 GSAP 속성
           duration: 0.5, // 애니메이션이 발생되는 시간
           stagger: 0.04, //요소를 순서대로 조금씩 시간 차를 두고 애니메이션 시키는 옵션
           onComplete: () => {
