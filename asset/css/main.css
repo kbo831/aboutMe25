@@ -51,7 +51,6 @@
     text-align: center;
     padding: 0 2rem;
     opacity:0;
-    visibility: hidden;
     transform: translateY(2rem);
     transition: all 0.2s;
 }
@@ -61,8 +60,9 @@
 .intro-txt .point{}
 
 
-.intro-txt .point.active{text-shadow: 0 0 20px rgb(103, 228, 69);
-    animation: pointText 1s ease-in-out 1;
+.intro-txt .point.active{
+    text-shadow: 0 0 20px rgb(103, 228, 69);
+    animation: pointText 0.8s ease-in-out 1;
 }
 /* 진동 애니메이션 */
 @keyframes pointText {

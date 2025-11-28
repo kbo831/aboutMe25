@@ -22,30 +22,32 @@ $(document).ready(function () {
             }
         }
 
+
+
         // split + set
         const splitText = SplitText.create(".intro-txt", { type: "chars" });
-        gsap.set(splitText.chars, { autoAlpha: 0, yPercent: -200});
+        gsap.set(splitText.chars, { opacity:1, yPercent: -200});
 
         // chars 등장
-        gsap.to(splitText.chars, {
+        gsap.from(splitText.chars, {
           yPercent: 0,
-          autoAlpha: 1,
-          duration: 0.8,
-          stagger: 0.02,
+          autoAlpha:0,//opacity + visibility를 동시에 조절하는 GSAP 속성
+          duration: 0.5, // 애니메이션이 발생되는 시간
+          stagger: 0.04, //요소를 순서대로 조금씩 시간 차를 두고 애니메이션 시키는 옵션
           onComplete: () => {
             const point = document.querySelector(".intro-txt.second .point");
             point?.classList.add("active");
 
 
             // 30초 뒤 intro-con 숨기기
-            gsap.delayedCall(1, () => {
+            gsap.delayedCall(0.7, () => {
 
               const tl = gsap.timeline(); // 순서 제어용 타임라인 생성
 
-              tl.to(".intro-con", { opacity: 0, duration: 1, ease: "power1.out" })
+              tl.to(".intro-con", { opacity: 0, duration: 0.8, ease: "power1.out" })
               .fromTo(".skip-card",
                 { opacity: 0, y: 100 },   // 시작 위치
-                { opacity: 1, visibility: "visible", y: 0, duration: 1, ease: "power3.out",
+                { opacity: 1, visibility: "visible", y: 0, duration: 0.7, ease: "power3.out",
                   onComplete: () => {
                       console.log("skip-card 애니메이션 완료!");
                       spreadCard();
