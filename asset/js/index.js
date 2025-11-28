@@ -26,7 +26,7 @@ $(document).ready(function () {
 
         // split + set
         const splitText = SplitText.create(".intro-txt", { type: "chars" });
-        gsap.set(splitText.chars, { opacity:1, yPercent: -200});
+        gsap.set(splitText.chars, { opacity:1, visibility: "hidden", yPercent: -200});
 
         // chars 등장
         gsap.from(splitText.chars, {
