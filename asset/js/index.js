@@ -37,6 +37,9 @@ $(document).ready(function () {
           autoAlpha:1,//opacity + visibility를 동시에 조절하는 GSAP 속성
           duration: 0.5, // 애니메이션이 발생되는 시간
           stagger: 0.04, //요소를 순서대로 조금씩 시간 차를 두고 애니메이션 시키는 옵션
+          onStart: ()=>{
+            gsap.set(".intro-con", { opacity:1,visibility: 'visible' }); 
+          },
           onComplete: () => {
             const point = document.querySelector(".intro-txt.second .point");
             point?.classList.add("active");
