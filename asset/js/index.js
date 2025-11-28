@@ -26,7 +26,10 @@ $(document).ready(function () {
 
         // split + set
         const splitText = SplitText.create(".intro-txt", { type: "chars" });
-        gsap.set(splitText.chars, { yPercent: -200});
+        gsap.set(splitText.chars, {
+            autoAlpha: 1,   // opacity 0 + visibility hidden
+            yPercent: -100,   // 아래서 올라오는 효과를 위해 위치 조정
+        });
 
         // chars 등장
         gsap.from(splitText.chars, {
