@@ -29,7 +29,7 @@ $(document).ready(function () {//DOM 구조가 준비되면 호출
         const splitText = SplitText.create(".intro-txt", { type: "chars" }); // 분리할 텍스트 대상 지정
         gsap.set(splitText.chars, { // 텍스트 기본 스타일 설정
             autoAlpha: 0,   // opacity 0 + visibility hidden
-            yPercent: -100,   // 아래서 올라오는 효과를 위해 위치 조정
+            yPercent: -200,   // 아래서 올라오는 효과를 위해 위치 조정
         });
 
         // chars 등장
@@ -49,13 +49,17 @@ $(document).ready(function () {//DOM 구조가 준비되면 호출
 
             // 0.7초 뒤 intro-con 숨기기
             gsap.delayedCall(0.7, () => { //일정 시간 뒤 함수 호출 : delayedCall
-
+              
               const tl = gsap.timeline(); // 순서 제어용 타임라인 생성
 
-              tl.to(".intro-con", { opacity: 0, duration: 0.8, ease: "power1.out" })
+              tl.to(".intro-con", { opacity: 0,visibility:"hidden", duration: 0.8, ease: "power1.out" })
               .fromTo(".skip-card",
                 { opacity: 0, y: 100 },   // 시작 위치
                 { opacity: 1, visibility: "visible", y: 0, duration: 0.7, ease: "power3.out",
+                  // onStart: () => {
+                  // document.querySelector('.sc-inner').style.paddingTop = "8rem";
+                  // // 또는 jQuery: $('.sc-inner').css('padding-top', '100px');
+                  // },
                   onComplete: () => {
                       console.log("skip-card 애니메이션 완료!");
                       spreadCard();
