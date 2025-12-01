@@ -1,1 +1,1 @@
-#footer{ padding:var(--layout-padding); padding-top:3rem; padding-bottom: 3rem;}
+#footer{ padding:var(--layout-padding); padding-top:3rem; padding-bottom: 3rem; width: 100%;max-width: 100%;}

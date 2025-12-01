@@ -3,6 +3,7 @@
 @import url("../../css/common/button.css");
 
 /* common */
+body{ font-family: "Pretendard", "GmarketSans", sans-serif;}
 
 .sr-only{
 position: absolute !important;

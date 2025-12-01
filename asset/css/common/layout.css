@@ -18,17 +18,17 @@
     word-break: keep-all;
     margin: 0;padding: 0;
 }
-html,body{display:block; position: relative; width: 100%; min-height: 100vh; }
+html,body{display:block; position: relative; width: 100%; min-height: 100vh;overflow-x: hidden;}
 html{
     font-size: 62.5%;  /* 1rem = 10px 기준설정값  */ }
 body{
-    overflow-x: hidden;
     background: rgba(0,0,0,0.8); 
     max-width: var(--full-max-with);
+    width:100%;
     margin: 0 auto;
     font-size: var(--body-font-size);
     font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color:#fff}
-main{}
+main{width: 100%; overflow-x: hidden;}
 
 
 .gmarketSans{ font-family: 'GMarketSans';font-weight: 300;}
