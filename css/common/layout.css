@@ -28,7 +28,7 @@ body{
     margin: 0 auto;
     font-size: var(--body-font-size);
     font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color:#fff}
-main{}
+main{width: 100%; overflow-x: hidden;}
 
 
 .gmarketSans{ font-family: 'GMarketSans';font-weight: 300;}
