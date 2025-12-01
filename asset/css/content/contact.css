@@ -6,12 +6,9 @@
     top:auto;
     width: 100%;
     gap:9rem;
-   
     }
 #contact .skip-card .link{height: 100%;border-style: solid;border-width: 6px;border-color: transparent;
-    transition :all 0.3s;
-    /* transform: translateY(0); */
-    height: 40rem;}
+    height: 40rem; transition: border  0.3s;}
 #contact .skip-card .first-card{background-color: #FFC309; }
 
 #contact .skip-card .second-card{ background-color: #F5CBCB;}
@@ -22,8 +19,7 @@
 #contact .skip-card .link:hover
 ,#contact .skip-card .link:focus{
     border-color:#fff;
-    /* transform: translateY(-5rem); */
-}
+} 
 
 #contact .skip-card .bg{
     left: 50%;top: 50%;

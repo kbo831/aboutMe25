@@ -58,6 +58,7 @@ width: 1px; background-color: #fff; position: absolute; left:5rem; top: 0; heigh
 /* tultip */
 .date{font-size: 1.8rem; font-weight: normal;}
 
+
 @media screen and (max-width:768px) {
         
     #about .full-list .link,#about .info-row{flex-wrap: wrap;}

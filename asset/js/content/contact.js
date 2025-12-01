@@ -7,19 +7,19 @@ $(document).ready(function(){
          //스크롤 트리거할 프로젝트 배열에 담기
         const projectItem = gsap.utils.toArray('.box');
         // 초기 상태 설정
-        gsap.set("#portfolio .sc-title", { opacity: 0, y: 100 });
-        gsap.set("#portfolio .full-list .li", { opacity: 0, y: 100 });
+        gsap.set("#contact .sc-title", { opacity: 0, y: 100 });
+        gsap.set("#contact .skip-card .link", { opacity: 0, y: 100 });
 
     
     const tl = gsap.timeline({
         scrollTrigger: {
-        trigger: "#portfolio", // 스크롤 트리거 기준 컨테이너
+        trigger: "#contact", // 스크롤 트리거 기준 컨테이너
         start: "top 70%", // 애니메이션 시작기준
         toggleActions: "play none none reverse"
         }
     });
     // about 타이틀 등장 
-    tl.to("#portfolio .sc-title", {
+    tl.to("#contact .sc-title", {
         opacity: 1,
         y: 0,
         duration: 0.8,
@@ -27,11 +27,11 @@ $(document).ready(function(){
     })
 
     // 2) about 리스트 li 순차 등장
-    .to("#portfolio .full-list .li", {
+    .to("#contact .skip-card .link", {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        stagger: 0.6,
+        stagger: 0.3,
         ease: "power3.out"
     }, "-=0.2") // 타이틀 끝나기 0.2초 전부터 실행
 
