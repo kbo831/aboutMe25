@@ -1,21 +1,19 @@
 
 /* common */
 
-
-
 .sc{min-height: 100vh;  width: 100%;}
 .sc-inner,.sc-con{width: 100%;}
 .sc-inner{   
-    position: sticky;
-    top: 0;
-    min-height: 100vh;
-    width: 95%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
   }
 /* loader */
