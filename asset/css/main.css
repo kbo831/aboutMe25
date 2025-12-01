@@ -6,12 +6,13 @@
 .sc-inner{   
     position:relative;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+   overflow: hidden;
   }
+
 /* loader */
 /* .loader {
   position: absolute;
@@ -38,9 +39,24 @@
   background: #c8c8c8;
 } */
 
+/* sc-con */
+.sc-con{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 /* intro */
 .intro{ position: relative; transition: all 0.3s;}
-.intro .intro-con{opacity: 0;visibility: hidden;height: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column; position: absolute; top:50%;left:50%;transform: translate(-50%,-50%);}
+.intro .intro-con{
+    opacity: 0;
+    visibility: hidden;
+    /* height: 100%; */
+  
+  }
+
+
 .intro .intro-text{
     color: #fff;
     position: relative;
@@ -79,15 +95,11 @@
 .skip-card{
   opacity: 0;
   visibility: hidden;
-  position:relative;
 }
 
 .skip-card .link{
   height:50rem;
-  position: absolute;
-  left: 50%;
-  top:50%;
-  transform:translate(-50%,-50%);
+
  }
 
 .skip-card .link .title,.skip-card .link .title span{transition: all 0.3s;}
@@ -174,7 +186,7 @@
 @media screen and (max-width: 900px) {
  
     .intro .intro-txt{font-size: 4.5rem;}
-    .skip-card {flex-wrap: wrap;}
+ 
     .skip-card .link{height: 25rem;  min-width: 20rem;}
     .skip-card .link-inner{padding: 3rem;}
     .skip-card .link .title span{width: auto;}
@@ -184,7 +196,7 @@
 }
 
 @media screen and (max-width:860px) {
-
+  .intro{padding-top: 6rem;}
   .skip-card{padding: 8rem;}
 
 }
