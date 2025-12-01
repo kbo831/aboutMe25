@@ -191,16 +191,14 @@
 
 @media screen and (max-width:860px) {
 
-  /* .skip-card{display: block; text-align: center;}
-  .skip-card .link{margin-bottom:2rem} */
   .skip-card{padding: 8rem;}
-
 
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
 
-  .skip-card{padding: 3rem 3rem;}
+  .skip-card{padding: 3rem;}
   .skip-card .link{max-width: 100%;}
   .intro .intro-txt{font-size: 3.5rem;}
+
 }

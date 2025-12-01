@@ -109,13 +109,12 @@ cubic-bezier(0.42, 0, 0, 1);}
 .m_open-btn.active .line-bottom{transform: translateY(-0.42rem) rotate(-45deg);}
 
 
-
 @media (max-width: 640px) {
     .m_open-btn{display: flex;}
     .gnb-nav{display: none;}
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width:450px) {
     .header{position: relative;}
     .m_header{right: 1.4rem;}
 }
