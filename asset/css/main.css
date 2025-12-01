@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
   }
 /* loader */
 /* .loader {
@@ -192,10 +193,14 @@
 
   /* .skip-card{display: block; text-align: center;}
   .skip-card .link{margin-bottom:2rem} */
-.skip-card{padding: 8rem;}
+  .skip-card{padding: 8rem;}
+
+
 }
 
 @media screen and (max-width:400px) {
 
+  .skip-card{padding: 3rem 3rem;}
+  .skip-card .link{max-width: 100%;}
   .intro .intro-txt{font-size: 3.5rem;}
 }

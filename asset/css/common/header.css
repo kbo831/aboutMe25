@@ -116,6 +116,7 @@ cubic-bezier(0.42, 0, 0, 1);}
 }
 
 @media (max-width: 400px) {
+    .header{position: relative;}
     .m_header{right: 1.4rem;}
 }
 
