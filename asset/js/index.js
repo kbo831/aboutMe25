@@ -41,6 +41,7 @@ $(document).ready(function () {//DOM 구조가 준비되면 호출
           onStart: ()=>{
             //숨겨둔 "intro-con" 함수 실행시 보이게
             gsap.set(".intro-con", { opacity:1,visibility: 'visible' }); 
+            gsap.set(".intro > .sc-inner",{overflow:"hidden"})
           },
           onComplete: () => {
             const point = document.querySelector(".intro-txt.second .point");
@@ -59,6 +60,7 @@ $(document).ready(function () {//DOM 구조가 준비되면 호출
                   onComplete: () => {
                       console.log("skip-card 애니메이션 완료!");
                       spreadCard();
+                      tl.to(".intro > .sc-inner",{overflow:""})
                   }
                  } // 마지막위치 
               );

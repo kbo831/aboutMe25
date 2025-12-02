@@ -78,7 +78,7 @@
 
 
 .intro .intro-txt{font-size: 6rem; font-weight: bold; display: block; text-align: center; }
-.intro-txt .point{}
+.intro-txt .point{display: block; font-size: 7.5rem; }
 
 
 .intro-txt .point.active{
@@ -208,6 +208,7 @@ width: 100%;
 @media screen and (max-width:860px) {
   .intro{/* padding-top: 10rem; *//* padding-bottom: 10rem; */}
   .skip-card{padding: 8rem;}
+  .skip-card .link{max-width: 100%;}
 
 }
 
