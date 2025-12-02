@@ -2,6 +2,10 @@
 .tultip.social{}
 .tultip.date{}
 
+.sc-title{ opacity: 0;visibility: hidden;}
+
+
+
 #about .small-text{margin: 0 2rem;}
 #about .full-list .link{
     gap: 5rem;

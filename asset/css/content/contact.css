@@ -7,7 +7,7 @@
     width: 100%;
     gap:9rem;
     }
-#contact .skip-card .link{height: 100%;border-style: solid;border-width: 6px;border-color: transparent;
+#contact .skip-card .link{min-height: 25rem; max-height:35rem;border-style: solid;border-width: 6px;border-color: transparent;
     height: 40rem; transition: border  0.3s;}
 #contact .skip-card .first-card{background-color: #FFC309; }
 
@@ -37,7 +37,9 @@
 
 @media screen and (max-width:500px) {
 #contact .skip-card .link{height: 25rem;}
-#contact .skip-card .bg{width: 150px;height: 150px;}
+#contact .skip-card .bg{width: 150px;height: 150px;} 
+}
 
-    
+@media (max-height: 630px) {
+ /* #contact  .skip-card .link{height: auto;} */
 }
