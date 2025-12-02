@@ -10,7 +10,7 @@
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
-   overflow: hidden;
+
   padding: var( --layout-padding);
 
   }
@@ -206,17 +206,19 @@ width: 100%;
 }
 
 @media screen and (max-width:860px) {
-  .intro{padding-top: 10rem; padding-bottom: 10rem;}
+  .intro{/* padding-top: 10rem; *//* padding-bottom: 10rem; */}
   .skip-card{padding: 8rem;}
 
 }
 
 @media screen and (max-width:450px) {
-
-  .skip-card{padding: 3rem;}
-  .skip-card .link{max-width: 100%;}
-  .intro {  padding-top: 5rem;  padding-bottom: 5rem;  }
-  .intro .intro-txt{font-size: 3.5rem;}
-  
+  .sc-inner{  padding-top: 9rem;
+      padding-bottom: 2rem;}
+  .skip-card{padding: 0rem;}
+  .skip-card .link{max-width: 100%;height: 17rem;}
+  .intro {/* padding-top: 5rem; *//* padding-bottom: 5rem; */}
+  .intro .intro-txt{font-size: 2.5rem}
+  .intro-txt .point{display: block; font-size: 4rem; }
 
 }
+

@@ -28,7 +28,7 @@ body{
     margin: 0 auto;
     font-size: var(--body-font-size);
     font-family: 'Pretendard', 'Noto Sans KR', sans-serif; color:#fff}
-main{width: 100%; overflow-x: hidden;}
+main{width: 100%; overflow-x: hidden;min-height: 100vh;}
 
 
 .gmarketSans{ font-family: 'GMarketSans';font-weight: 300;}
@@ -51,7 +51,7 @@ main{width: 100%; overflow-x: hidden;}
 /* sub content common */
 .sub-content{padding: 15rem 0;}
 .sc-con{padding: var(--layout-padding);}
-.sc-title{font-size: 6rem;font-family: "Pretendard"; font-weight: bold;letter-spacing: 0.2rem; margin-bottom:20rem}
+.sc-title{font-size: 6rem;font-family: "Pretendard"; font-weight: bold;letter-spacing: 0.2rem; margin: 15rem 0 10rem 0;}
 
 /* contact-skip_btn */
 .contact-skip_btn {
