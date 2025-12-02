@@ -2,7 +2,9 @@
 .tultip.social{}
 .tultip.date{}
 
-.sc-title{ opacity: 0;visibility: hidden;}
+.sc-title
+,.full-list .li
+,.full-list .activity .desc > li{ opacity: 0;visibility: hidden;}
 
 
 

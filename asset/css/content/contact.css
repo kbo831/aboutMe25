@@ -1,5 +1,7 @@
 
 
+.sc-title,.skip-card .link{ opacity: 0;visibility: hidden;}
+
 #contact .skip-card{
     position:relative;
     left: auto;

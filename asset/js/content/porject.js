@@ -7,8 +7,8 @@ $(document).ready(function(){
          //스크롤 트리거할 프로젝트 배열에 담기
         const projectItem = gsap.utils.toArray('.box');
         // 초기 상태 설정
-        gsap.set("#portfolio .sc-title", { opacity: 0, y: 100 });
-        gsap.set("#portfolio .full-list .li", { opacity: 0, y: 100 });
+        gsap.set("#portfolio .sc-title", { opacity: 0,visibility:"hidden", y: 100 });
+        gsap.set("#portfolio .full-list .li", { opacity: 0,visibility:"hidden", y: 100 });
 
     
     const tl = gsap.timeline({
@@ -21,6 +21,7 @@ $(document).ready(function(){
     // about 타이틀 등장 
     tl.to("#portfolio .sc-title", {
         opacity: 1,
+        visibility:"visible",
         y: 0,
         duration: 0.8,
         ease: "power3.out"
@@ -29,6 +30,7 @@ $(document).ready(function(){
     // 2) about 리스트 li 순차 등장
     .to("#portfolio .full-list .li", {
         opacity: 1,
+        visibility:"visible",
         y: 0,
         duration: 0.8,
         stagger: 0.6,
