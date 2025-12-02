@@ -52,14 +52,10 @@ $(document).ready(function () {//DOM 구조가 준비되면 호출
               
               const tl = gsap.timeline(); // 순서 제어용 타임라인 생성
 
-              tl.to(".intro-con", { opacity: 0,visibility:"hidden", duration: 0.8, ease: "power1.out" })
-              .fromTo(".skip-card",
+              tl.to(".sc-con.first", { opacity: 0,visibility:"hidden",display:"none", duration: 0.8, ease: "power1.out" })
+              .fromTo(".sc-con.second",
                 { opacity: 0, y: 100 },   // 시작 위치
                 { opacity: 1, visibility: "visible", y: 0, duration: 0.7, ease: "power3.out",
-                  // onStart: () => {
-                  // document.querySelector('.sc-inner').style.paddingTop = "8rem";
-                  // // 또는 jQuery: $('.sc-inner').css('padding-top', '100px');
-                  // },
                   onComplete: () => {
                       console.log("skip-card 애니메이션 완료!");
                       spreadCard();
